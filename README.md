@@ -31,34 +31,80 @@ It monitors network connections in real-time, detects suspicious activity, and a
 
 ## 🔹 Installation
 
-### 1. Clone the repo
+### 1. Clone the repository
 ```bash
 git clone https://github.com/aadeshs0lanki/Threat_Detection_System.git
 cd Threat_Detection_System
+```
 
 ### 2. Install dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
-🔹 Usage
-
-🔹 Run real-time monitoring
-
+### 3. Run the program
+- Real-time monitoring:
+```bash
 python threat_detection.py --run
-
-🔹 Demo mode (safe, fake alerts for presentation)
-
+```
+- Demo mode (fake alerts for testing/presentations):
+```bash
 python threat_detection.py --demo
-
-🔹 Show past logs
-
+```
+- Show past alerts:
+```bash
 python threat_detection.py --show-log
-
-🔹 Export alerts to JSON (for reporting)
-
+```
+- Export alerts to JSON:
+```bash
 python threat_detection.py --export-json
+```
+---
 
-# 🛡️ Z+ Threat Detection System (Z+TDS)
+## 🔹 Demo Mode Example
 
-A lightweight **Threat Detection & Response System** written in **pure Python**.  
-It monitors network connections in real-time, detects suspicious activity, and alerts via console, logs, email, or Slack.  
+Run:
+```bash
+python threat_detection.py --demo
+```
+
+Output:
+```
+[ALERT] Suspicious port 4444 accessed from 192.168.1.50
+[ALERT] Blacklisted IP detected from 45.133.1.10
+[ALERT] Possible brute force/scan detected from 10.0.0.99
+```
+
+---
+
+## 🔹 Screenshots
+
+📊 **Dashboard Example**
+```
+============================================================
+   Z+ Threat Detection System
+============================================================
+
+Recent Alerts:
+ - Tue Sep 17 12:10:45 2025 - Suspicious port 4444 accessed from 192.168.1.50
+ - Tue Sep 17 12:10:47 2025 - Blacklisted IP detected from 45.133.1.10
+
+Quarantine List:
+   192.168.1.50 -> 1 strikes
+   45.133.1.10 -> 1 strikes
+
+(Press CTRL+C to stop)
+``` 
+
+---
+
+## 🔹 Disclaimer
+
+⚠️ **For educational purposes only.**  
+This is **not a replacement** for professional security software.  
+Use responsibly in controlled environments.  
+
+---
+
+## 🔹 License
+MIT License © 2025
