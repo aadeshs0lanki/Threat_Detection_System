@@ -33,8 +33,8 @@ It monitors network connections in real-time, detects suspicious activity, and a
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/ptds.git
-cd ptds
+git clone https://github.com/aadeshs0lanki/Threat_Detection_System.git
+cd Threat_Detection_System
 
 ### 2. Install dependencies
 
