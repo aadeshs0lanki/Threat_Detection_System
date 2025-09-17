@@ -37,23 +37,28 @@ git clone https://github.com/yourusername/ptds.git
 cd ptds
 
 ### 2. Install dependencies
-```bash
+
 pip install -r requirements.txt
 
 🔹 Usage
 
 🔹 Run real-time monitoring
-```bash
+
 python threat_detection.py --run
 
 🔹 Demo mode (safe, fake alerts for presentation)
-```bash
+
 python threat_detection.py --demo
 
 🔹 Show past logs
-```bash
+
 python threat_detection.py --show-log
 
 🔹 Export alerts to JSON (for reporting)
-```bash
+
 python threat_detection.py --export-json
+
+# 🛡️ Z+ Threat Detection System (Z+TDS)
+
+A lightweight **Threat Detection & Response System** written in **pure Python**.  
+It monitors network connections in real-time, detects suspicious activity, and alerts via console, logs, email, or Slack.  
